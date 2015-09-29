@@ -78,6 +78,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/Eleven.apk:system/app/Eleven/Eleven.apk
 
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # GPS HAL
 PRODUCT_PACKAGES += \
     gps.msm8960
