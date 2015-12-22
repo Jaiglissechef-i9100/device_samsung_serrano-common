@@ -217,6 +217,18 @@ on post-fs-data
 
     # Create /data/time folder for time-services
     mkdir /data/time/ 0700 system system
+    
+    # Vibrator
+    chmod 0644 /sys/class/timed_output/vibrator/pwm_value
+    chown root system /sys/class/timed_output/vibrator/pwm_value
+    chmod 0644 /sys/class/timed_output/vibrator/pwm_max
+    chown root system /sys/class/timed_output/vibrator/pwm_max
+    chmod 0644 /sys/class/timed_output/vibrator/pwm_min
+    chown root system /sys/class/timed_output/vibrator/pwm_min
+    chmod 0644 /sys/class/timed_output/vibrator/pwm_default
+    chown root system /sys/class/timed_output/vibrator/pwm_default
+    chmod 0644 /sys/class/timed_output/vibrator/pwm_threshold
+    chown root system /sys/class/timed_output/vibrator/pwm_threshold
 
     mkdir /data/audio/ 0770 media audio
 
